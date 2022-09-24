@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Light Project</title>
+    <style>
+        *{
+          background-color: black;
+        }
+        .container{
+           
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+        h2{
+            color: white;
+            margin-left:50px;
+        }
+        #ligoff{
+            color: white;
+            border: 2px solid white;
+            cursor: pointer;
+            margin-left: 80px;
+        }
+        #ligon{
+            color: white;
+            border: 2px solid white;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Light it Or Dark it</h2>
+        <img src="./lightoff.png" id="image">
+        <div class="buttons">
+            <button id="ligon" onclick="document.getElementById('image').src='./lighton.png'">Light ON</button>
+            <button id="ligoff" onclick="document.getElementById('image').src='./lightoff.png'">Light OFF</button>
+        </div>
+        
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
